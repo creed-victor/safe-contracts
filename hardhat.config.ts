@@ -5,6 +5,7 @@ import "hardhat-deploy";
 import dotenv from "dotenv";
 import type { HardhatUserConfig, HttpNetworkUserConfig } from "hardhat/types";
 import yargs from "yargs";
+import "@tenderly/hardhat-tenderly"
 
 const argv = yargs
   .option("network", {
@@ -95,7 +96,7 @@ const userConfig: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://public-node.rsk.co`,
     },
-    trsk: {
+    'rsk-testnet': {
       ...sharedNetworkConfig,
       url: `https://public-node.testnet.rsk.co`,
     },
