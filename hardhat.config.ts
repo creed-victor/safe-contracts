@@ -91,6 +91,14 @@ const userConfig: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://volta-rpc.energyweb.org`,
     },
+    rsk: {
+      ...sharedNetworkConfig,
+      url: `https://public-node.rsk.co`,
+    },
+    trsk: {
+      ...sharedNetworkConfig,
+      url: `https://public-node.testnet.rsk.co`,
+    },
   },
   namedAccounts: {
     deployer: 0,
